@@ -1,0 +1,109 @@
+.main-layout {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #fefefe;
+}
+
+.main-container {
+  flex: 1;
+  display: grid;
+  grid: min-content auto min-content / 100%;
+  transition: margin 0.25s linear 0.1s;
+}
+
+.main-sidenav {
+  border: 1px solid #eee;
+}
+
+.main-header,
+footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.main-content {
+  width: 100%;
+  display: grid;
+  grid: 100%/100%;
+  overflow: auto;
+  background-color: #f9fafb;
+}
+
+.main-header {
+  padding: 5px 10px;
+  height: 64px;
+}
+.main-sidenav {
+  margin-left: 0;
+  width: 15em;
+  transition: margin 0.25s linear 0.1s;
+  position: fixed;
+  z-index: 9999;
+}
+.sidenav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #fefefe;
+}
+
+.main-layout.collapsed .main-sidenav {
+  margin-left: -15em;
+}
+
+.main-layout .main-container {
+  margin-left: 0;
+}
+
+.app-page-container-header {
+  transition: width 0.25s linear 0.1s;
+}
+
+.main-layout .main-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(6px);
+  z-index: 9998;
+}
+
+.main-layout.collapsed .main-overlay {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-layout .main-sidenav {
+    position: fixed;
+  }
+  .main-layout .main-container {
+    margin-left: 15em;
+  }
+  .main-layout.collapsed .main-container {
+    margin-left: 0;
+  }
+
+  .main-layout .app-page-container-header {
+    width: calc(100% - 15em);
+  }
+
+  .main-layout.collapsed .app-page-container-header {
+    width: 100%;
+  }
+
+  .main-layout .main-overlay {
+    display: none;
+  }
+
+  .main-container .main-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}

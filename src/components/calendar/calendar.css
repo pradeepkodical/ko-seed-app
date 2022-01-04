@@ -1,0 +1,11 @@
+.cal-container {
+  width: 100%;
+  display: grid;
+  grid: 1fr / 1fr;
+}
+.fc-daygrid a {
+  text-decoration: none;
+}
+.fc-daygrid-day-frame {
+  border: 1px solid #f3f4f6;
+}

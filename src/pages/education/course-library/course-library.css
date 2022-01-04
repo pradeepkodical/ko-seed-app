@@ -1,0 +1,27 @@
+.cl-dashboard-container {
+  width: 100%;
+  display: grid;
+  grid: auto / 1fr;
+}
+.item {
+  padding: 5px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 468px) {
+  .cl-dashboard-container {
+    grid: auto / repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cl-dashboard-container {
+    grid: auto / repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1028px) {
+  .cl-dashboard-container {
+    grid: auto / repeat(4, 1fr);
+  }
+}

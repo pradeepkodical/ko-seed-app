@@ -1,0 +1,23 @@
+.cal-dashboard-container {
+  width: 100%;
+  display: grid;
+  grid: 60px 1fr / 1fr;
+}
+
+@media only screen and (min-width: 468px) {
+  .cl-dashboard-container {
+    grid: auto / repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cl-dashboard-container {
+    grid: auto / repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1028px) {
+  .cl-dashboard-container {
+    grid: auto / repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,10 @@
+.dashboard-container {
+  width: 100%;
+  display: grid;
+  grid: auto / 1fr 1fr;
+  grid-gap: 0.2em;
+}
+.item {
+  padding: 5px;
+  overflow: hidden;
+}

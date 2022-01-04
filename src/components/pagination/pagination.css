@@ -1,0 +1,20 @@
+.app-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-pagination > * {
+  margin-left: 5px;
+}
+
+.app-pagination select {
+  width: 100px;
+}
+
+.app-pagination .btn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+}
