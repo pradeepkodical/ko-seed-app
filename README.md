@@ -40,13 +40,13 @@ Always start designing the styles for mobile and then implement to larger screen
 
 /*For medium device*/
 @media only screen and (min-width: 768px) {
-  .cl-dashboard-container {
+  .your-element {
     width: 50%;
   }
 }
 /*For large device*/
 @media only screen and (min-width: 1028px) {
-  .cl-dashboard-container {
+  .your-element {
     width: 25%;
   }
 }
